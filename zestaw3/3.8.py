@@ -4,6 +4,10 @@ two = 'nmziutrsl903bulqa'
 repeated = ''
 unrepeated = ''
 
+print(one)
+print(two)
+print()
+
 for i in range(0, len(one)):
     for j in range(0, len(two)):
         if one[i] == two[j]:

@@ -12,3 +12,19 @@ def roman2int(string):
 
 print('MMXXIII')
 print(roman2int('MMXXIII'))
+print()
+print('CMXLIX')
+print(roman2int('CMXLIX'))
+
+'''
+słownik można również zrobić tak:
+
+roman = {}
+roman['I'] = 1
+roman['V'] = 5
+roman['X'] = 10
+roman['L'] = 50
+roman['C'] = 100
+roman['D'] = 500
+roman['M'] = 1000
+'''
