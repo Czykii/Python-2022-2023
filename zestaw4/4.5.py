@@ -6,7 +6,7 @@ def odwracanie_it(L, left, right):
         right = right - 1
     return L
 
-def odwracanie_rek(L, left, right):     #do zrobienia
+def odwracanie_rek(L, left, right):
     if left+1 != right and left != right:
         L[left], L[right] = L[right], L[left]
         return odwracanie_rek(L, left+1, right-1)
