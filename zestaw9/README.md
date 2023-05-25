@@ -1,0 +1,68 @@
+# Zestaw 9
+
+##### OBOWIĄZKOWE DO PRZESŁANIA: jedno zadanie z zestawu
+
+## Zadanie 9.1 (SINGLELIST)
+Do klasy SingleList dodać nowe metody.
+
+``` python
+class SingleList:
+# ... inne metody ...
+
+    def remove_tail(self): pass   # klasy O(n)
+        # Zwraca cały węzeł, skraca listę.
+        # Dla pustej listy rzuca wyjątek ValueError.
+
+    def join(self, other): pass   # klasy O(1)
+        # Węzły z listy other są przepinane do listy self na jej koniec.
+        # Po zakończeniu operacji lista other ma być pusta.
+
+    def clear(self): pass   # czyszczenie listy
+```
+
+POCZĄTEK JOIN
+
+A1 o-- self.head
+
+|
+
+A2 o-- self.tail
+
+|
+
+None
+<br>
+
+B1 o-- other.head
+
+|
+
+B2 o-- other.tail
+
+|
+
+None
+<br>
+<br>
+
+KONIEC JOIN
+
+A1 o-- self.head
+
+|
+
+A2
+
+|
+
+B1
+
+|
+
+B2 o-- self.tail
+
+|
+
+None
+
+None o-- other.head = other.tail
